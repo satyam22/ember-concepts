@@ -16,4 +16,9 @@ export default class CounterComponent extends Component {
       this.count = this.count - 1;
     }
   }
+
+  @action
+  change(amount) {
+    this.count += amount;
+  }
 }

@@ -1,4 +1,7 @@
 <h3>{{this.count}}</h3>
 
-<button type="button" class="button" {{on 'click' this.increment}}>+1</button>
-<button type="button" class="button" {{on 'click' this.decrement}}>-1</button>
+{{!-- <button type="button" class="button" {{on 'click' this.increment}}>+1</button>
+<button type="button" class="button" {{on 'click' this.decrement}}>-1</button> --}}
+
+<button type="button" class="button" {{on 'click' (fn this.change 1)}}>+1</button>
+<button type="button" class="button" {{on 'click' (fn this.change -1)}}>-1</button>
