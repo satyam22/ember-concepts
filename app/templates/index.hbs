@@ -1,14 +1,13 @@
 <div class="messages">
   {{!-- <ReceivedMessage /> --}}
 
-  <Message @avatarTitle="Ankush's Avatar" @avatarInitial="A" @username="Ankush" @isUserActive={{true}}>
+  <Message @username="Ankush" @isUserActive={{true}}>
     <p>
       Hey Satyam, What's up? Are you interested in taking Ember class for Remote
       batch 1 ?😀
     </p>
   </Message>
-  <Message @avatarTitle="Satyam's Avatar" @avatarInitial="S" @username="Satyam" @isUserActive={{false}}
-    @isCurrentUser={{true}}>
+  <Message @username="Satyam" @isUserActive={{false}} @isCurrentUser={{true}}>
     <p>Hey!</p>
 
     <p>
@@ -36,5 +35,4 @@
   {{!-- <LinkTo @route="counter-page">
     <div role="presentation"> Go to counter page</div>
   </LinkTo> --}}
-  {{!-- <a href="/counter-page">Go to counter page</a> --}}
 </div>

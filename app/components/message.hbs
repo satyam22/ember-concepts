@@ -1,0 +1,6 @@
+<Avatar @title="{{@username}}'s avatar'" @initial={{substring @username start=0 end=1 }} @isActive={{@isUserActive}}
+  class={{if @isCurrentUser 'current-user'}} />
+<section>
+  <Username @name={{@username}} @status={{@userStatus}} />
+  {{yield}}
+</section>
